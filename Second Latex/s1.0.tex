@@ -1,17 +1,30 @@
 \documentclass{article}
 \author {Author}
 \title {Title}%标题
+\date{\today}
 \begin{document}%文档开始
 \maketitle
 \section{First section} test1.%1号题目，花括号后面是下面的文字
     \subsection{First subsection} test2.%sub表示下一级？这样比较方便
         \subsubsection{First double subsection}%同理，三级标题
+        \begin{itemize}
+          \item C++
+          \item Java
+        \end{itemize}
             \paragraph{Fist paragraph} test3.%第一段？不对，应该还是一级小标题
+            \begin{enumerate}
+              \item C++
+              \item HTML
+            \end{enumerate}
                 \subparagraph{First subparagraph} test4.%二级小标题
+                \begin{description}%这个是属于上面的1.1.1的内容，而不是二级段的
+                  \item[python] P-God
+                  \item[Java] J-God
+                \end{description}
     \subsection{Second subsection}%可以自己排成第二个二级小标题
-        \paragraph{what}
-\\%在这里没有换行
-Hello World! \\ % This is comment
+        \paragraph{what\\}
+%在这里没有换行
+Hello World! \\ % This is comment 为啥是前面空两格的？
 Hello \LaTeX ! \\
 
 $\lim\limits_{n \rightarrow +\infty} P\lbrace\frac{\sum\limits_{i=1}{n}Xi - n\cdot EX}{ \sqrt{n \cdot DX} }  \leqslant x\rbrace = \Phi(x)$ \\
