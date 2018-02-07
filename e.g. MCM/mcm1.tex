@@ -1,12 +1,30 @@
 \documentclass{mcmthesis}%套用美赛模板
-\mcmsetup{tcn = 2323, program = A, titlepage = true}%tcn队伍识别号，program选题，titlepage输出封面
+\mcmsetup{tcn = 2323, problem = A, abstract = true}%tcn队伍识别号，program选题，titlepage输出封面
 \renewcommand{\headset}{{\large\the\year}\\MCM/ICM\\Summary Sheet}%根据每年情况变更摘要题头
+
+\title{The MCM Problem Solution}
+\author{Yang Zhou\and Ke Lee\and Junnan Liao}%use \end to divide
+\date{\large\the\year}
+
 \begin{document}
 
-\begin{abstract}%摘要包含在文章内
-This is an example of the ABSTRACT.
-\end{abstract}
+  \begin{abstract}%摘要包含在文章内
+    This is an example of the ABSTRACT. \\
+    \section{1}
+    YEP
+    \emph{What?}%斜体
+    \\
+    ``yin''\\%`为左引号，'为右引号
+    `yin'\\
+    \emph{for example}:\ \ little-last\\little--last\\little---last\\little$-$last\\
+    If the temperature is $-30\,^{\circ}\mathrm{C}$ , it would be successful.\\%bingo use $$ to surround the whole formula
+    \idots means ...\\
 
+  \end{abstract}
+
+  \begin{keywords}
+    MCM,B,Solution
+  \end{keywords}
 \maketitle%打印控制页
 
 Life is a formula like
